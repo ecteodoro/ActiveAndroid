@@ -20,7 +20,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -37,7 +37,7 @@ public final class TableInfo {
 	private String mTableName;
 	private String mIdName = Table.DEFAULT_ID_NAME;
 
-	private Map<Field, String> mColumnNames = new HashMap<Field, String>();
+	private Map<Field, String> mColumnNames = new LinkedHashMap<Field, String>();
 
 	//////////////////////////////////////////////////////////////////////////////////////
 	// CONSTRUCTORS
